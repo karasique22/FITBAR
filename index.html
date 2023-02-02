@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBar</title>
+    <link rel="icon" type="image/x-icon" href="Data/logo_orig.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar bg-secondary" style="border-bottom: 0.05em solid black;" id="navbarMobile">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="Data/SVG/logo-orig.svg" class="img-fluid rounded-top" alt=""
+                    style="height: 86px; min-width: 74px;"></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" style="border: 0"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0" style="align-items: center;">
+                    <li class="nav-item">
+                        <div class="dropdown" style="margin-bottom: 0.3em;">
+                            <button class="btn" type="button" style="padding: 0;">
+                                <a href="" class="btn" style="padding: 0;">
+                                    Каталог
+                                </a>
+                            </button>
+                            <button class="btn dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" style="border: none; padding: 0; padding-top: 0.2em;"
+                                aria-expanded="false">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="triggerId">
+                                <a class="dropdown-item" href="#">Витамины и минералы</a>
+                                <a class="dropdown-item" href="#">Жиросжигатели</a>
+                                <a class="dropdown-item" href="#">Протеины</a>
+                                <a class="dropdown-item" href="#">Здоровое питание</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Акции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Доставка и оплата</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Наши магазины</a>
+                    </li>
+                </ul>
+                <form class="input-group mt-1" method="get">
+                    <input class="form-control border-dark" type="text" placeholder="Поиск по сайту">
+                    <button class="btn btn-outline-secondary" type="submit">Найти</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="navbarDesktop" class="bg-secondary navbar" style="border-bottom: 0.05em solid black;">
+        <div class="container justify-content-center">
+            <div class="row g-5 px-xl-5">
+                <div class="col-12">
+                    <nav class="nav justify-content-around">
+                        <a href="" class="nav-link ps-0">Каталог</a>
+                        <a href="" class="nav-link">Акции</a>
+                        <a href="" class="nav-link">Доставка и оплата</a>
+                        <a href="" class="nav-link">Отзывы</a>
+                        <a href="" class="nav-link">Контакты</a>
+                        <a href="" class="nav-link">Наши магазины</a>
+                        <a href="" class="nav-link ms-xl-5 ms-md-1">
+                            Войти/зарегистрироваться
+                            <img src="data/SVG/profile.svg" class="img-fluid rounded-top" alt="">
+                        </a>
+                    </nav>
+                </div>
+                <div class="col-12 pb-5">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-around">
+                            <div class="col-md-1 p-0">
+                                <img src="data/SVG/logo-orig.svg" class="img-fluid rounded-top" alt=""
+                                    style="height: 86px; width: 74px;">
+                            </div>
+                            <div class="col pe-0">
+                                <div class="col pb-3">
+                                    <div class="container pe-3">
+                                        <div class="row g-2">
+                                            <div class="col-10">
+                                                <form action="" method="get" class="input-group">
+                                                    <input class="form-control border-dark" type="text"
+                                                        placeholder="Поиск по каталогу" aria-describedby="submitButton">
+                                                    <button class="btn btn-outline-secondary" type="submit"
+                                                        id="submitButton">Найти</button>
+                                                </form>
+                                            </div>
+                                            <div class="col pe-0">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="" class="favorite"><img src="data/SVG/favorite.svg"
+                                                                    class="img-fluid rounded-top favorite" alt=""
+                                                                    style="height: 2.5em; padding-left: 25%;">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col pe-0">
+                                                            <a href="" class="cart"><img src="data/SVG/cart.svg"
+                                                                    class="img-fluid rounded-top" alt=""
+                                                                    style="height: 2.5em; padding-left: 25%;">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="btn-group" style="width: 100%;">
+                                        <div class="container">
+                                            <div class="row g-0 justify-content-end">
+                                                <a href="" class="btn btn-outline-secondary col">Витамины и
+                                                    минералы</a>
+                                                <a href="" class="btn btn-outline-secondary col">Жиросжигатели</a>
+                                                <a href="" class="btn btn-outline-secondary col">Протеины</a>
+                                                <a href="" class="btn btn-outline-secondary col">Здоровое
+                                                    питание</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid container-xxl">
+        <div class="row px-5">
+            <div class="col">
+                <div class="ps-lg-5 py-lg-5 p-sm-5 rounded-3">
+                    <div class="container-fluid py-5 main-content"
+                        style="align-items: center; display: flex; flex-direction: column; text-align: center;">
+                        <h1 class="display-5 fw-bold main-header">Кому нужно спортивное питание?</h1>
+                        <p class="col-md-8 col-lg-10 fs-4 hidden-text main-text"> Многие считают, что спортивное питание
+                            нужно
+                            только атлетам для накачки горы мышц. На самом деле, это специальные добавки, принимать
+                            которые можно даже при полном отсутствии спорта.</p>
+                        <p class="col-md-8 col-lg-10 fs-4 main-text"> Спортивное питание необходимо это для реализации
+                            следующих
+                            целей:</p>
+                        <ul class="list fs-lg-5 main-content-list px-5">
+                            <li>похудение, уменьшение количества жировой прослойки;</li>
+                            <li>повышение выносливости и физической силы;</li>
+                            <li>укрепление организма;</li>
+                            <li>наращивание мышечной массы;</li>
+                            <li>очищение организма от токсинов и шлаков.</li>
+                        </ul>
+                        <p class="col-md-8" style="opacity: 65%;">
+                            Покупая питание в интернет-магазине «FITBAR», вы увеличиваете шансы на достижение
+                            поставленной цели.
+                        </p>
+                        <button class="btn btn-primary btn-lg" type="button"
+                            style="border-radius: 0.25rem;">Каталог</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col hidden-stuff justify-content-center align-self-center pe-5">
+                <img src="data/stuff.png" class="img-fluid rounded-top" alt="" style="height: px;">
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer style="background-color: #ecebeb; border-top: 0.05em black solid;">
+        <div class="accordion accordion-flush" id="footerMobile">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                        FITBAR
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#footerMobile">
+                    <div class="accordion-body">
+                        <ul class="list-unstyled" style="display: flex; align-items: center; flex-direction: column;">
+                            <li class="footer-list-item">
+                                <a class="btn" href="">О компании</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a class="btn" href="">Контакты</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a class="btn" href="">Реквизиты</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a class="btn" href="">Магазины</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a class="btn" href="">Вакансии</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a class="btn" href="">Блог</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
+                        Информация
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#footerMobile">
+                    <div class="accordion-body" style="padding: 0">
+                        <ul class="list-unstyled" style="display: flex; align-items: center; flex-direction: column;">
+                            <li class="footer-list-item">
+                                <a class="btn" href="">Условия оплаты</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a class="btn" href="">Условия доставки</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a class="btn" href="">Возврат денег</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a class="btn" href="">Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree">
+                        Помощь
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#footerMobile">
+                    <div class="accordion-body" style="padding: 0">
+                        <ul class="list-unstyled"
+                            style="display: flex; align-items: center; flex-direction: column; margin-bottom: 0;">
+                            <li class="footer-list-item">
+                                <a class="btn" href="">Вопрос-ответ</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a class="btn" href="">Как купить</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a class="btn" href="">Бонусная система</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a class="btn" href="">Обратная связь</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="padding: 1em 0;" id="contactsMobile">
+            <div class="row justify-content-center align-items-center g-2" style="margin: 0;">
+                <div class="col col-lg-2" style="text-align: center;">
+                    <a href=""><img src="Data/SVG/vk.svg" alt="" style="width: 33%; max-height: 65px;"></a>
+                </div>
+                <div class="col col-lg-2" style="text-align: center;">
+                    <a href=""><img src="Data/SVG/whatsapp.svg" alt="" style="width: 33%; max-height: 65px;"></a>
+                </div>
+                <div class="col col-lg-2" style="text-align: center; padding-right: 0;">
+                    <a href=""><img src="Data/SVG/telegram.svg" alt="" style="width: 33%; max-height: 65px;"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footerDesktop">
+            <div class="footer-menu">
+                <div class="footer-menu__first-column" style="font-weight: 500;">
+                    <div><a href="" class="nav-link pb-2">Каталог</a></div>
+                    <div><a href="" class="nav-link pb-2">Бренды</a></div>
+                    <div><a href="" class="nav-link">Акции</a></div>
+                </div>
+                <div class="footer-menu__second-column">
+                    <div><a href="" class="nav-link" style="font-weight: 500;">FITBAR</a></div>
+                    <div><a href="" class="nav-link">О компании</a></div>
+                    <div><a href="" class="nav-link">Контакты</a></div>
+                    <div><a href="" class="nav-link">Реквизиты</a></div>
+                    <div><a href="" class="nav-link">Магазины</a></div>
+                    <div><a href="" class="nav-link">Вакансии</a></div>
+                    <div><a href="" class="nav-link">Блог</a></div>
+                </div>
+                <div class="footer-menu__third-column">
+                    <div><a href="" class="nav-link" style="font-weight: 500;">Информация</a></div>
+                    <div><a href="" class="nav-link">Условия оплаты</a></div>
+                    <div><a href="" class="nav-link">Условия доставки</a></div>
+                    <div><a href="" class="nav-link">Возврат денег</a></div>
+                    <div><a href="" class="nav-link">Политика конфиденциальности</a></div>
+                </div>
+                <div class="footer-menu__fourth-column">
+                    <div><a href="" class="nav-link" style="font-weight: 500;">Помощь</a></div>
+                    <div><a href="" class="nav-link">Вопрос-ответ</a></div>
+                    <div><a href="" class="nav-link">Как купить</a></div>
+                    <div><a href="" class="nav-link">Бонусная система</a></div>
+                    <div><a href="" class="nav-link">Обратная связь</a></div>
+                </div>
+                <div class="footer-menu__fifth-column">
+                    <div class="contacts">
+                        <div class="logo-black">
+                            <img src="data/logo-black.png" alt="">
+                        </div>
+                        <div class="vk-logo logos">
+                            <a href=""><img src="data/SVG/vk.svg" alt="""></a>
+                        </div>
+                        <div class=" whatsapp-logo logos">
+                                <a href=""><img src="data/SVG/whatsapp.svg" alt=""></a>
+                        </div>
+                        <div class="telegram-logo logos">
+                            <a href="""><img src=" data/SVG/telegram.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
